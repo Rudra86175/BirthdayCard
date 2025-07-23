@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Romantic Playlist</title>
+    <link rel="stylesheet" href="song.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+</head>
+
+<body class="font-sans text-gray-800">
+    <!-- Background Particles -->
+    <div class="particles"></div>
+    
+    <!-- Main Container -->
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header Section -->
+        <div class="text-center mb-10" data-aos="fade-down" data-aos-duration="1000">
+            <h1 class="text-5xl font-bold mb-3 text-pink-600 font-serif">Our Playlist 💖🎶</h1>
+            <p class="text-lg text-purple-700 italic max-w-2xl mx-auto font-light">Every beat, every lyric, every moment – these songs are a part of us.</p>
+        </div>
+        
+        <!-- Search Bar -->
+        <div class="mb-8 max-w-md mx-auto" data-aos="fade-up" data-aos-duration="800">
+            <div class="glass rounded-full px-5 py-3 flex items-center shadow-lg">
+                <i class="fas fa-search text-pink-400 mr-3"></i>
+                <input type="text" id="search" placeholder="Find our song..." class="bg-transparent w-full focus:outline-none placeholder-pink-300 text-pink-600">
+            </div>
+        </div>
+        
+        <!-- Playlist Grid - Now with 3 columns on large screens -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+            <!-- Song Card 1 -->
+            <div class="song-card glass p-5 relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+                <div class="shine-effect"></div>
+                <div class="absolute top-3 right-3 text-pink-400">
+                    <i class="fas fa-heart text-xl"></i>
+                </div>
+                
+                <div class="song-thumbnail mb-4 relative">
+                    <img src="songpic1.jpg" alt="Song thumbnail" class="w-full h-40 object-cover rounded-2xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 rounded-2xl flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <button class="play-btn bg-pink-500 hover:bg-pink-600 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-all">
+                            <i class="fas fa-play text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="song-details">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-pink-600">Perfect</h3>
+                        <div class="equalizer hidden">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <p class="text-purple-500 mb-3 text-sm">Ed Sheeran</p>
+                    
+                    <div class="flex items-center text-xs text-pink-400 mb-3">
+                        <span class="mr-3"><i class="fas fa-calendar-alt mr-1"></i> First Dance</span>
+                        <span><i class="fas fa-clock mr-1"></i> 4:23</span>
+                    </div>
+                </div>
+                
+                <audio class="hidden" src="Perfect.mp3"></audio>
+                
+                <div class="hidden memory opacity-0 transition-all duration-500 mt-3 text-center italic text-pink-600 text-sm">
+                    <p class="typing-text">Remember our first dance to this song? 💭</p>
+                </div>
+                
+                <div class="mt-3 pt-3 border-t border-pink-100 flex justify-between items-center">
+                    <button class="text-pink-500 hover:text-pink-700">
+                        <i class="fas fa-upload mr-1"></i> Upload
+                    </button>
+                    <button class="text-pink-500 hover:text-pink-700">
+                        <i class="fas fa-heart mr-1"></i> Favorite
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Song Card 2 -->
+            <div class="song-card glass p-5 relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="shine-effect"></div>
+                <div class="absolute top-3 right-3 text-pink-400">
+                    <i class="fas fa-heart text-xl"></i>
+                </div>
+                
+                <div class="song-thumbnail mb-4 relative">
+                    <img src="songpic2.jpg" alt="Song thumbnail" class="w-full h-40 object-cover rounded-2xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 rounded-2xl flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <button class="play-btn bg-pink-500 hover:bg-pink-600 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-all">
+                            <i class="fas fa-play text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="song-details">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-pink-600">Die With A Smile</h3>
+                        <div class="equalizer hidden">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <p class="text-purple-500 mb-3 text-sm">Lady Gaga & Bruno Mars</p>
+                    
+                    <div class="flex items-center text-xs text-pink-400 mb-3">
+                        <span class="mr-3"><i class="fas fa-car mr-1"></i> Road Trips</span>
+                        <span><i class="fas fa-clock mr-1"></i> 4:29</span>
+                    </div>
+                </div>
+                
+                <audio class="hidden" src="Die With A Smile.mp3"></audio>
+                
+                <div class="hidden memory opacity-0 transition-all duration-500 mt-3 text-center italic text-pink-600 text-sm">
+                    <p class="typing-text">Our song for those long drives together 🚗✨</p>
+                </div>
+                
+                <div class="mt-3 pt-3 border-t border-pink-100 flex justify-between items-center">
+                    <button class="text-pink-500 hover:text-pink-700">
+                        <i class="fas fa-upload mr-1"></i> Upload
+                    </button>
+                    <button class="text-pink-500 hover:text-pink-700">
+                        <i class="fas fa-heart mr-1"></i> Favorite
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Song Card 3 -->
+            <div class="song-card glass p-5 relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="shine-effect"></div>
+                <div class="absolute top-3 right-3 text-pink-400">
+                    <i class="fas fa-heart text-xl"></i>
+                </div>
+                
+                <div class="song-thumbnail mb-4 relative">
+                    <img src="songpic3.jpg" alt="Song thumbnail" class="w-full h-40 object-cover rounded-2xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 rounded-2xl flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <button class="play-btn bg-pink-500 hover:bg-pink-600 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-all">
+                            <i class="fas fa-play text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="song-details">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-pink-600">Night Changes</h3>
+                        <div class="equalizer hidden">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <p class="text-purple-500 mb-3 text-sm">One Direction</p>
+                    
+                    <div class="flex items-center text-xs text-pink-400 mb-3">
+                        <span class="mr-3"><i class="fas fa-star mr-1"></i> Special Moments</span>
+                        <span><i class="fas fa-clock mr-1"></i> 3:02</span>
+                    </div>
+                </div>
+                
+                <audio class="hidden" src="Night Changes.mp3"></audio>
+                
+                <div class="hidden memory opacity-0 transition-all duration-500 mt-3 text-center italic text-pink-600 text-sm">
+                    <p class="typing-text">This song always makes me think of you 🩷</p>
+                </div>
+                
+                <div class="mt-3 pt-3 border-t border-pink-100 flex justify-between items-center">
+                    <button class="text-pink-500 hover:text-pink-700">
+                        <i class="fas fa-upload mr-1"></i> Upload
+                    </button>
+                    <button class="text-pink-500 hover:text-pink-700">
+                        <i class="fas fa-heart mr-1"></i> Favorite
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Song Card 4 -->
+            <div class="song-card glass p-5 relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="shine-effect"></div>
+                <div class="absolute top-3 right-3 text-pink-400">
+                    <i class="fas fa-heart text-xl"></i>
+                </div>
+                
+                <div class="song-thumbnail mb-4 relative">
+                    <img src="songpic4.jpg" alt="Song thumbnail" class="w-full h-40 object-cover rounded-2xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 rounded-2xl flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <button class="play-btn bg-pink-500 hover:bg-pink-600 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-all">
+                            <i class="fas fa-play text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="song-details">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-pink-600">Ve Kamleya</h3>
+                        <div class="equalizer hidden">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <p class="text-purple-500 mb-3 text-sm">Arijit Singh</p>
+                    
+                    <div class="flex items-center text-xs text-pink-400 mb-3">
+                        <span class="mr-3"><i class="fas fa-gift mr-1"></i> Anniversary</span>
+                        <span><i class="fas fa-clock mr-1"></i> 4:45</span>
+                    </div>
+                </div>
+                
+                <audio class="hidden" src="Ve Kamleya.mp3"></audio>
+                
+                <div class="hidden memory opacity-0 transition-all duration-500 mt-3 text-center italic text-pink-600 text-sm">
+                    <p class="typing-text">Our anniversary special 💝</p>
+                </div>
+                
+                <div class="mt-3 pt-3 border-t border-pink-100 flex justify-between items-center">
+                    <button class="text-pink-500 hover:text-pink-700">
+                        <i class="fas fa-upload mr-1"></i> Upload
+                    </button>
+                    <button class="text-pink-500 hover:text-pink-700">
+                        <i class="fas fa-heart mr-1"></i> Favorite
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Song Card 5 -->
+            <div class="song-card glass p-5 relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="shine-effect"></div>
+                <div class="absolute top-3 right-3 text-pink-400">
+                    <i class="fas fa-heart text-xl"></i>
+                </div>
+                
+                <div class="song-thumbnail mb-4 relative">
+                    <img src="songpic5.jpg" alt="Song thumbnail" class="w-full h-40 object-cover rounded-2xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 rounded-2xl flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <button class="play-btn bg-pink-500 hover:bg-pink-600 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-all">
+                            <i class="fas fa-play text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="song-details">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-pink-600">Satranga</h3>
+                        <div class="equalizer hidden">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <p class="text-purple-500 mb-3 text-sm">Arijit Singh</p>
+                    
+                    <div class="flex items-center text-xs text-pink-400 mb-3">
+                        <span class="mr-3"><i class="fas fa-moon mr-1"></i> Late Nights</span>
+                        <span><i class="fas fa-clock mr-1"></i> 4:41</span>
+                    </div>
+                </div>
+                
+                <audio class="hidden" src="Satranga Animal.mp3"></audio>
+                
+                <div class="hidden memory opacity-0 transition-all duration-500 mt-3 text-center italic text-pink-600 text-sm">
+                    <p class="typing-text">Remember that night under the stars? 🌟</p>
+                </div>
+                
+                <div class="mt-3 pt-3 border-t border-pink-100 flex justify-between items-center">
+                    <button class="text-pink-500 hover:text-pink-700">
+                        <i class="fas fa-upload mr-1"></i> Upload
+                    </button>
+                    <button class="text-pink-500 hover:text-pink-700">
+                        <i class="fas fa-heart mr-1"></i> Favorite
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Song Card 6 -->
+            <div class="song-card glass p-5 relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <div class="shine-effect"></div>
+                <div class="absolute top-3 right-3 text-pink-400">
+                    <i class="fas fa-heart text-xl"></i>
+                </div>
+                
+                <div class="song-thumbnail mb-4 relative">
+                    <img src="songpic6.jpg" alt="Song thumbnail" class="w-full h-40 object-cover rounded-2xl">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 rounded-2xl flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <button class="play-btn bg-pink-500 hover:bg-pink-600 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-all">
+                            <i class="fas fa-play text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="song-details">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-pink-600">Apna Bana Le Piya</h3>
+                        <div class="equalizer hidden">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <p class="text-purple-500 mb-3 text-sm">Arijit Singh</p>
+                    
+                    <div class="flex items-center text-xs text-pink-400 mb-3">
+                        <span class="mr-3"><i class="fas fa-smile mr-1"></i> Happy Days</span>
+                        <span><i class="fas fa-clock mr-1"></i> 3:40</span>
+                    </div>
+                </div>
+                
+                <audio class="hidden" src="Apna Bana Le.mp3"></audio>
+                
+                <div class="hidden memory opacity-0 transition-all duration-500 mt-3 text-center italic text-pink-600 text-sm">
+                    <p class="typing-text">This always makes me smile 😊</p>
+                </div>
+                
+                <div class="mt-3 pt-3 border-t border-pink-100 flex justify-between items-center">
+                    <button class="text-pink-500 hover:text-pink-700">
+                        <i class="fas fa-upload mr-1"></i> Upload
+                    </button>
+                    <button class="text-pink-500 hover:text-pink-700">
+                        <i class="fas fa-heart mr-1"></i> Favorite
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add New Song Button -->
+        <div class="flex justify-center mb-16" data-aos="fade-up" data-aos-duration="800">
+            <button class="bg-pink-500 hover:bg-pink-600 text-white rounded-full px-6 py-3 flex items-center justify-center shadow-lg transition-all hover:transform hover:scale-105">
+                <i class="fas fa-plus mr-2"></i> Add Our New Song
+            </button>
+        </div>
+        
+        <!-- Now Playing Bar -->
+        <div id="now-playing" class="fixed bottom-0 left-0 w-full bg-white bg-opacity-70 backdrop-blur-md py-3 px-4 shadow-lg transform translate-y-full transition-transform duration-500 flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="mr-3">
+                    <div class="w-12 h-12 rounded-full bg-pink-500 flex items-center justify-center text-white pulse">
+                        <i class="fas fa-music"></i>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-bold text-pink-600">Now Playing:</p>
+                    <p id="current-song" class="text-purple-600">-</p>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <button class="mx-2 text-pink-600 hover:text-pink-800 transition-colors">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="mx-2 text-pink-600 hover:text-pink-800 transition-colors">
+                    <i class="fas fa-pause"></i>
+                </button>
+                <button class="mx-2 text-pink-600 hover:text-pink-800 transition-colors">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+            </div>
+            <div class="equalizer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="song.js"></script>
+</body>
+</html>

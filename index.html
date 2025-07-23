@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, To You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Pacifico&family=Lobster&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <div class="welcome-card" id="welcomeCard">
+        <!-- Song Preview Card -->      
+        <!-- Stylish Play Button -->
+        <div style="text-align: center; margin-top: 40px;">
+        <button id="playButton" style="
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            font-family: 'Pacifico', cursive;
+            color: white;
+            background: linear-gradient(135deg, #ff0066, #ff99cc);
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 8px 20px rgba(255, 0, 102, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+                 ">
+             Tap to Enjoy ❤️
+        </button>
+        </div>
+
+        <!-- Hidden Audio -->
+        <audio id="loveSong" preload="auto">
+        <source src="Happy Birthday Song.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+        document.getElementById("playButton").addEventListener("click", function () {
+            const audio = document.getElementById("loveSong");
+            audio.play();
+        });
+        </script>
+
+        
+
+        <div class="ribbon">
+            <span class="ribbon-content">Special Day!</span>
+        </div>
+        
+        <div class="celebration-border"></div>
+        
+        <h1>Happy Birthday💖 To You! 🎉</h1>
+        <p>Today is all about you — the light of my life. I've prepared a little journey filled with surprises just for you. Let's begin…</p>
+        
+        <div class="heart-button-container">
+            <div class="heart-pulse">
+                <div class="pulse-ring"></div>
+                <div class="pulse-ring"></div>
+                <div class="pulse-ring"></div>
+            </div>
+            <div class="heart-button" id="startButton">
+                <div class="heart-button-text">Begin</div>
+            </div>
+        </div>
+    </div>
+<div class="sound-control" id="soundControl">
+        
+    </div>
+    
+
+    <div class="cake-icon"></div>
+    <div class="gift-icon"></div>
+
+    <audio id="bgMusic" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/07/24/audio_8281aefa0a.mp3?filename=emotional-piano-118996.mp3" type="audio/mpeg">
+        
+    </audio>
+
+    <script src="index.js"></script>
+</body>
+</html>

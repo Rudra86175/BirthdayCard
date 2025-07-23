@@ -1,0 +1,151 @@
+ .glass {
+            background: rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+        
+        .typing-text {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3.5s steps(40, end);
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        .pulse {
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(0.95); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(0.95); }
+        }
+        
+        .equalizer {
+            display: flex;
+            align-items: flex-end;
+            height: 20px;
+            width: 50px;
+        }
+        
+        .bar {
+            width: 4px;
+            margin: 0 1px;
+            background: linear-gradient(to top, #ff88cc, #ffaad5);
+            animation: equalize 1s infinite;
+        }
+        
+        .bar:nth-child(1) { animation-delay: 0.1s; height: 15px; }
+        .bar:nth-child(2) { animation-delay: 0.2s; height: 10px; }
+        .bar:nth-child(3) { animation-delay: 0.3s; height: 18px; }
+        .bar:nth-child(4) { animation-delay: 0.4s; height: 8px; }
+        .bar:nth-child(5) { animation-delay: 0.5s; height: 12px; }
+        
+        @keyframes equalize {
+            0% { height: 3px; }
+            50% { height: 15px; }
+            100% { height: 3px; }
+        }
+        
+        body {
+            background: linear-gradient(135deg, #fff1f1 0%, #ffd6e7 50%, #f0e6ff 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .particle {
+            position: absolute;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(255, 182, 193, 0.4)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            opacity: 0.6;
+            width: 24px;
+            height: 24px;
+            animation: float 10s linear infinite;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.6;
+            }
+            90% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .song-card {
+            transition: all 0.4s ease;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.15);
+        }
+        
+        .song-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(255, 105, 180, 0.25);
+        }
+        
+        .song-thumbnail {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .play-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .play-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+        }
+        
+        .song-details {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .shine-effect {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to right,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.3) 50%,
+                rgba(255, 255, 255, 0) 100%
+            );
+            transform: rotate(30deg);
+            animation: shine 6s infinite;
+        }
+        
+        @keyframes shine {
+            0% { transform: rotate(30deg) translateX(-100%); }
+            20% { transform: rotate(30deg) translateX(100%); }
+            100% { transform: rotate(30deg) translateX(100%); }
+        }

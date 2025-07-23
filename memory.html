@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! - Magical Memory Celebration</title>
+    <link rel="stylesheet" href="memory.css" />
+</head>
+<body>
+    <div class="birthday-bg"></div>
+    <div class="confetti-container" id="confetti-container"></div>
+    
+    <!-- Floating gifts -->
+    <div class="floating-gifts">
+        <div class="gift gift-1">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="30" width="60" height="40" rx="3" fill="#FF3CAC" />
+                <rect x="10" y="30" width="60" height="10" rx="3" fill="#FF3CAC" stroke="#784BA0" stroke-width="2" />
+                <rect x="35" y="30" width="10" height="40" fill="#784BA0" />
+                <rect x="25" y="10" width="30" height="20" rx="10" fill="#784BA0" />
+                <path d="M40 10 L40 30" stroke="#784BA0" stroke-width="6" />
+            </svg>
+        </div>
+        <div class="gift gift-2">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="30" width="60" height="40" rx="3" fill="#2CD3E1" />
+                <rect x="10" y="30" width="60" height="10" rx="3" fill="#2CD3E1" stroke="#A100FFFF" stroke-width="2" />
+                <rect x="35" y="30" width="10" height="40" fill="#A100FFFF" />
+                <rect x="25" y="10" width="30" height="20" rx="10" fill="#A100FFFF" />
+                <path d="M40 10 L40 30" stroke="#A100FFFF" stroke-width="6" />
+            </svg>
+        </div>
+        <div class="gift gift-3">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="30" width="60" height="40" rx="3" fill="#FBAB7E" />
+                <rect x="10" y="30" width="60" height="10" rx="3" fill="#FBAB7E" stroke="#8BC6EC" stroke-width="2" />
+                <rect x="35" y="30" width="10" height="40" fill="#8BC6EC" />
+                <rect x="25" y="10" width="30" height="20" rx="10" fill="#8BC6EC" />
+                <path d="M40 10 L40 30" stroke="#8BC6EC" stroke-width="6" />
+            </svg>
+        </div>
+        <div class="gift gift-4">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="30" width="60" height="40" rx="3" fill="#FF9A8B" />
+                <rect x="10" y="30" width="60" height="10" rx="3" fill="#FF9A8B" stroke="#FF6A88" stroke-width="2" />
+                <rect x="35" y="30" width="10" height="40" fill="#FF6A88" />
+                <rect x="25" y="10" width="30" height="20" rx="10" fill="#FF6A88" />
+                <path d="M40 10 L40 30" stroke="#FF6A88" stroke-width="6" />
+            </svg>
+        </div>
+    </div>
+    
+    <!-- Birthday cake -->
+    <div class="birthday-cake">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Cake base -->
+            <rect x="40" y="120" width="120" height="40" rx="5" fill="#FF9A8B" stroke="#FF6A88" stroke-width="2" />
+            <rect x="30" y="80" width="140" height="40" rx="5" fill="#FBAB7E" stroke="#FF6A88" stroke-width="2" />
+            <rect x="20" y="40" width="160" height="40" rx="5" fill="#F7CE68" stroke="#FF6A88" stroke-width="2" />
+            
+            <!-- Candles -->
+            <rect x="60" y="20" width="8" height="20" rx="2" fill="#FBAB7E" />
+            <circle cx="64" cy="18" r="4" fill="#FF4500" />
+            <rect x="100" y="10" width="8" height="30" rx="2" fill="#FBAB7E" />
+            <circle cx="104" cy="8" r="4" fill="#FF4500" />
+            <rect x="140" y="20" width="8" height="20" rx="2" fill="#FBAB7E" />
+            <circle cx="144" cy="18" r="4" fill="#FF4500" />
+            
+            <!-- Decorations -->
+            <circle cx="50" cy="60" r="5" fill="#FF3CAC" />
+            <circle cx="80" cy="60" r="5" fill="#784BA0" />
+            <circle cx="110" cy="60" r="5" fill="#FF3CAC" />
+            <circle cx="140" cy="60" r="5" fill="#784BA0" />
+            <circle cx="170" cy="60" r="5" fill="#FF3CAC" />
+            
+            <circle cx="65" cy="100" r="5" fill="#784BA0" />
+            <circle cx="95" cy="100" r="5" fill="#FF3CAC" />
+            <circle cx="125" cy="100" r="5" fill="#784BA0" />
+            <circle cx="155" cy="100" r="5" fill="#FF3CAC" />
+            
+            <circle cx="80" cy="140" r="5" fill="#FF3CAC" />
+            <circle cx="110" cy="140" r="5" fill="#784BA0" />
+            <circle cx="140" cy="140" r="5" fill="#FF3CAC" />
+        </svg>
+    </div>
+    
+    <!-- Balloons -->
+    <div class="balloon" style="left: 10%; animation-duration: 18s;">
+        <svg viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 50 C46.5685 50 60 38.8071 60 25 C60 11.1929 46.5685 0 30 0 C13.4315 0 0 11.1929 0 25 C0 38.8071 13.4315 50 30 50 Z" fill="#FF3CAC" />
+        </svg>
+    </div>
+    <div class="balloon" style="left: 80%; animation-duration: 20s; animation-delay: 2s;">
+        <svg viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 50 C46.5685 50 60 38.8071 60 25 C60 11.1929 46.5685 0 30 0 C13.4315 0 0 11.1929 0 25 C0 38.8071 13.4315 50 30 50 Z" fill="#2CD3E1" />
+        </svg>
+    </div>
+    <div class="balloon" style="left: 20%; top: 30%; animation-duration: 25s; animation-delay: 5s;">
+        <svg viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 50 C46.5685 50 60 38.8071 60 25 C60 11.1929 46.5685 0 30 0 C13.4315 0 0 11.1929 0 25 C0 38.8071 13.4315 50 30 50 Z" fill="#FF9A8B" />
+        </svg>
+    </div>
+    
+    <!-- Cake bubbles -->
+    <div class="cake-bubbles" id="cake-bubbles"></div>
+    
+    <!-- Main content -->
+    <div class="memory-lane-container">
+        <div class="header">
+            <div class="birthday-crown">
+                <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="50,0 65,15 80,5 70,25 90,30 70,40 80,55 50,40 20,55 30,40 10,30 30,25 20,5 35,15" fill="#FFD700" stroke="#FFA500" stroke-width="2" />
+                    <circle cx="50" cy="25" r="5" fill="#FF3CAC" />
+                    <circle cx="35" cy="20" r="3" fill="#2CD3E1" />
+                    <circle cx="65" cy="20" r="3" fill="#FF9A8B" />
+                </svg>
+            </div>
+            <h1>Happy Birthday!</h1>
+            <p>Welcome to your special day celebration! 
+                Cheers to another year of adventure, mischief, 
+                and laughter with you, my dear! Wishing you a birthday 
+                filled with boundless joy and unforgettable celebrations.</p>
+        </div>
+        
+        <div class="gallery-controls">
+            <button class="btn" id="shuffleButton">
+                <i>🔀</i> Shuffle Memories
+            </button>
+            <button class="btn" id="sortButton">
+                <i>📅</i> Sort by Date
+            </button>
+        </div>
+        
+        <div class="gallery-container">
+            <div class="gallery" id="memories">
+                <!-- Memory cards will be added here via JavaScript -->
+            </div>
+        </div>
+        
+        <div class="navigation-buttons">
+            <button class="btn" id="backButton">Previous Memories</button>
+            <button class="btn" id="nextButton">More Birthday Surprises!</button>
+        </div>
+    </div>
+    
+    <script src="memory.js"></script>
+</body>
+</html>
